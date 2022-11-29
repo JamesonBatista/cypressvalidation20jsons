@@ -1,0 +1,58 @@
+{
+  "name": "cypressvalidation20jsons",
+  "version": "1.0.0",
+  "description": "Projeto Cypress criado apenas para mostrar a validação de 20 JSONs que são praticamente impossíveis de existirem no Mercado pela complexidade.",
+  "main": "index.js",
+  "scripts": {
+    "cy": "npx cypress open",
+    "simpleSimple": "npx cypress open cypress/integration/features/simple-simple.feature --env 'TAGS=@simpleSimple'",
+    "simple": "npx cypress open cypress/integration/features/simple.feature 'TAGS=@simple'",
+    "simpleMedium": "npx cypress open cypress/integration/features/simple-medium.feature --env 'TAGS=@simpleMedium'",
+    "medium": "npx cypress open cypress/integration/features/medium.feature --env 'TAGS=@medium'",
+    "complex": "npx cypress open cypress/integration/features/complex.feature --env 'TAGS=@complex'",
+    "complexMedium": "npx cypress open cypress/integration/features/complex-medium.feature --env 'TAGS=@complexMedium'",
+    "hardSimples": "npx cypress open cypress/integration/features/hard-simples.feature --env 'TAGS=@hardSimples'",
+    "hardMedium": "npx cypress open cypress/integration/features/hard-medium.feature --env 'TAGS=@hardMedium'",
+    "hardComplex": "npx cypress open cypress/integration/features/hard-complex.feature --env 'TAGS=@hardComplex'",
+    "hardHard": "npx cypress open cypress/integration/features/hard-hardfeature.feature --env 'TAGS=@hardHard'",
+    "masterSimples": "npx cypress open cypress/integration/features/master-simples.feature --env 'TAGS=@masterSimples'",
+    "masterMedium": "npx cypress open cypress/integration/features/master-medium.feature --env 'TAGS=@masterMedium'",
+    "masterComplex": "npx cypress open cypress/integration/features/master-complex.feature --env 'TAGS=@masterComplex'",
+    "masterMaster": "npx cypress open --config testFiles='/Users/usuario/Desktop/cypressvalidation20jsons/cypress/integration/features/master-master.feature'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesonBatista/cypressvalidation20jsons.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesonBatista/cypressvalidation20jsons/issues"
+  },
+  "homepage": "https://github.com/JamesonBatista/cypressvalidation20jsons#readme",
+  "dependencies": {
+    "ajv": "^8.10.0",
+    "cypress": "^4.6.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^10.0.1",
+    "fs-promise": "^2.0.3"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@shelex/cypress-allure-plugin": "^2.26.5",
+    "allure-commandline": "^2.17.2",
+    "cucumber-html-reporter": "^5.5.0",
+    "cypress-cucumber-tagging": "^1.0.3",
+    "mocha-allure-reporter": "^1.4.0",
+    "mocha-junit-reporter": "^2.0.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/integration/step_definitions/**/"
+  }
+}
