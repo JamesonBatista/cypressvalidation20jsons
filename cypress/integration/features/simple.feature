@@ -1,3 +1,4 @@
+@ui
 Feature: Simple
 
 	Validando JSON para Teste

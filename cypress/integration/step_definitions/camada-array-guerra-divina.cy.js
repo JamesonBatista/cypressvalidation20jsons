@@ -5,8 +5,9 @@ let objectJSON;
 let objectQuartaCamada;
 Given("Que seja efetuado um GET na api camada-array-guerra-divina", () => {
   // TODO: implement step
-  JSONValidation(json);
-  objectJSON = JSON.parse(sessionStorage.getItem(json));
+  JSONValidation(json).then(($) => {
+    objectJSON = JSON.parse(sessionStorage.getItem(json));
+  });
 });
 
 Given(
@@ -76,7 +77,7 @@ Given(
   "For acessado o objeto da quarta camada com o valor {string}",
   (objectQuartaCamadaTitle) => {
     // TODO: implement step
-    
+
     expect(objectQuartaCamada.title).to.equal(objectQuartaCamadaTitle);
   }
 );
